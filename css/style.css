@@ -1,0 +1,1214 @@
+/*-----------------------------------
+  Custom Property Start
+-----------------------------------*/
+:root {
+  --gradient-1: linear-gradient(115.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(118 12 231) 100.2%);
+  --gradient-2: linear-gradient(109.8deg, rgb(62, 5, 116) -5.2%, rgb(41, 14, 151) -5.2%, rgb(162, 68, 216) 103.3%);
+  --orange-color: #FF530B;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --font-1-inter: "Inter", sans-serif;
+  --font-2-montserrat: "Montserrat", sans-serif;
+  --font-size-heading-1: 54px;
+  --font-size-heading-2: 46px;
+  --font-size-heading-3: 32px;
+  --font-size-p-1: 13px;
+  --font-size-p-2: 14px;
+  --font-size-p-3: 15px;
+  --font-size-p-4: 16px;
+  --font-size-p-5: 18px;
+  --font-size-p-6: 20px;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+}
+/*-----------------------------------
+  Custom Property Start
+-----------------------------------*/
+
+
+
+
+/* --------------------------
+  Restyle CSS Start
+---------------------------- */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-1-inter);
+}
+
+p, li, a{
+  font-family: var(--font-2-montserrat);
+}
+
+a{
+  text-decoration: solid !important;
+}
+/* -------------------------------
+  Restyle CSS End
+---------------------------------- */
+
+
+
+
+/* --------------------------
+  Header Section Start
+------------------------------ */
+body {
+  background-image: url('../images/banner-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #380200a1;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-area{
+  text-align: center;
+}
+
+.logo-area > a >img{
+  width: 300px;
+  height: auto;
+}
+.header-context{
+  padding: 30px 0px 0px 0px;
+}
+.header-context > h1{
+  color: var(--white-color);
+  font-size: 36px;
+  font-weight: var(--fw-700);
+  letter-spacing: 0.2px;
+  padding-bottom: 8px;
+}
+
+.header-context > p{
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: var(--fw-400);
+  padding-bottom: 20px;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.header-img {
+  position: absolute;
+  right: 50%;
+  top: 150px;
+  transform: translateX(180%);
+  display: block;
+}
+
+.header-img > img {
+  width: 300px;
+  height: 500px;
+  position: relative;
+}
+
+button.btn-sign-up{
+  padding: 12px 40px;
+  margin-top: 40px;
+  background: var(--orange-color);
+  font-size: var(--font-size-p-5);
+  font-weight: var(--fw-600);
+  font-family: var(--font-2-montserrat);
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  word-spacing: 1.2px;
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+}
+
+.header-context > h1 > span {
+  color: #025bff;
+}
+
+.trust-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+
+.trust-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trust-icon > img {
+  width: 28px;
+}
+
+.trust-description > p {
+  font-weight: 500;
+  color: #ffffff;
+  word-spacing: 1px;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  margin-bottom: 0px !important;
+  font-family: var(--font-1-inter);
+}
+/* ----------------------------
+  Header Section End
+------------------------------ */
+
+
+
+
+/* ----------------------------
+  Game Top List Section Start
+-------------------------------- */
+.game-top-list{
+  padding: 0px 0px 0px 0px;
+}
+
+.game-top-list-card {
+  background-color: var(--white-color);
+  padding: 15px 15px 15px 15px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 40px 0px rgba(42, 54, 66, 0.253);
+}
+
+.brand-name-border-2{
+  border-right: 1px solid rgba(128, 128, 128, 0.288);
+  padding-left: 0px;
+}
+
+.brand-name-border-3{
+  border-right: 1px solid rgba(128, 128, 128, 0.288);
+  padding-left: 0px;
+}
+
+.brand-game-logo {
+  text-align: center;
+}
+
+.brand-game-logo a > img {
+  width: 100%;
+  height: 165px;
+  max-height: -webkit-fill-available;
+}
+
+.game-top-list-bonus.top-list-bonus-sm {
+  position: relative;
+  top: 50%;
+  transform: translateY(-70px);
+}
+
+p.top-bonus-p-top {
+  font-size: var(--font-size-p-6);
+  font-weight: var(--fw-700);
+  color: var(--black);
+  word-spacing: 1.4px;
+  margin-bottom: 10px !important;
+}
+
+p.top-bonus-p-middle {
+  font-family: var(--font-1-inter);
+  font-size: var(--font-size-p-4);
+  font-weight: var(--fw-600);
+  color: rgb(49, 48, 48);
+  line-height: 28px;
+  word-spacing: 1.2px;
+  margin: 0px;
+  padding: 0px 18px;
+}
+
+p.top-bonus-p-bottom {
+  font-family: var(--font-1-roboto);
+  font-size: var(--font-size-p-3);
+  font-weight: var(--fw-500);
+  color: var(--black-color) !important;
+  word-spacing: 1.8px;
+  padding-top: 8px;
+  margin-bottom: 0px !important;
+}
+
+.list-item-feature{
+  position: relative;
+  top: 50%;
+  transform: translateY(-75px);
+}
+
+.list-item-feature > ul{
+  padding: 0px;
+  padding-left: 10px;
+}
+
+.list-item-feature > ul > li {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-1-inter);
+  font-weight: var(--fw-600);
+  font-size: var(--font-size-p-4);
+  color: rgb(49, 48, 48);
+  line-height: 20px;
+}
+
+.list-item-feature > ul > li > img{
+  width: 18px;
+}
+
+.button-area {
+  text-align: center;
+  padding: 38px 0px;
+}
+
+.top-list-btn > a > button {
+  background: var(--orange-color);
+  font-size: var(--font-size-p-4);
+  font-weight: var(--fw-600);
+  color: var(--white-color);
+  text-transform: uppercase;
+  line-height: 1.25em;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  border: 0px;
+  outline: none;
+  padding: 16px 40px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.2px;
+  border-radius: 50px;
+}
+
+.top-list-btn > a > button:hover {
+  background-color: var(--black-color);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.178);
+  letter-spacing: 0.8px;
+}
+
+.top-list-TC > a > p {
+  color: var(--black-color);
+  font-size: var(--font-size-p-1);
+  font-weight: var(--fw-600);
+  font-family: var(--font-1-roboto);
+  letter-spacing: 0.2px;
+  word-spacing: 1.2px;
+  margin-bottom: 0px;
+  text-decoration: underline solid #818181;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  top: 18px;
+}
+
+.top-list-TC > a > p:hover {
+  color: #363636;
+  text-decoration: underline solid #363636;
+  font-weight: var(--fw-600);
+}
+/* --------------------------------
+  Game Top List Section End
+----------------------------------- */
+
+
+
+/* ----------------------------------
+  Crash Section Start
+-------------------------------------- */
+.crush-game-section{
+  padding: 60px 0px;
+}
+
+.crash-part-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.crash-content > h2{
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--fw-700);
+  color: var(--black-color);
+  line-height: 62px;
+  margin-bottom: 15px;
+}
+
+.crash-content > h2::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background: var(--orange-color);
+  transform: translate(180px, 90px);
+}
+
+.crash-content > p{
+  font-size: var(--font-size-p-3);
+  font-weight: var(--fw-500);
+  color: rgb(121, 121, 121);
+  line-height: 28px;
+  word-spacing: 1.2px;
+}
+
+.crash-content > a > button{
+  margin: 15px 0px;
+}
+
+.crash-content-img > img{
+  width: 450px;
+  height: 450px;
+}
+
+#disclaimer {
+  overflow: hidden;
+  float: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  border-bottom: 1px solid transparent;
+  border-image-slice: 1;
+  border-width: 1px;
+  background: #ffb83f;
+}
+
+#disclaimer p > img{
+  width: 24px;
+  position: relative;
+  top: -1px;
+  padding: 0px 2px;
+}
+
+#disclaimer p {
+  color: #000000 !important;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 2px;
+  font-size: 13px;
+  margin: 0px !important;
+  word-spacing: 0.2px;
+  font-family: var(--font-2-montserrat);
+}
+
+@media (max-width: 599px) {
+  #disclaimer p {
+    font-size: 10px;
+    letter-spacing: 0px;
+    line-height: 6px;
+    padding: 6px 5px 10px 0px;
+    word-spacing: 1px;
+    color: #161414 !important;
+    font-weight: 500 !important;
+  }
+}
+/* ----------------------------------
+  Crash Section End
+-------------------------------------- */
+
+
+
+
+/*-----------------------------------
+  TOP Games Start
+-----------------------------------*/
+.top-collection {
+  padding: 60px 0px 200px 0px;
+  background: var(--gradient-2);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 87%, 0 100%);
+}
+
+.top-collection .title-wrapper .btn-link { 
+  display: none; 
+}
+
+.title-wrapper{
+  text-align: center;
+}
+
+.slider > ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.title-wrapper > h2{
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--fw-700);
+  color: var(--white-color);
+  line-height: 62px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.title-wrapper > h2::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background: var(--orange-color);
+  transform: translate(450px, 34px);
+}
+
+.top-collection .slider {
+  --slider-item: 1;
+
+  position: relative;
+  margin-inline: -8px;
+  padding: 4px 12px;
+  overflow-x: hidden;
+}
+
+.top-collection .slider-container {
+  position: relative;
+  display: flex;
+  transition: transform 300ms ease;
+}
+
+.top-collection .slider-item {
+  min-width: calc(100% / var(--slider-item));
+  width: calc(100% / var(--slider-item));
+  padding-inline: 12px;
+}
+
+.collection-card {
+  padding: 12px;
+  border: 1px solid #8080803a !important;
+}
+
+.headline-md, .title-lg, .title-md, .title-sm {
+  color: var(--black-color);
+  font-weight: var(--fw-600);
+}
+
+h3.title-md.card-title a {
+  color: var(--black-color);
+  font-weight: var(--fw-700);
+  font-size: var(--font-size-p-6);
+  margin: 0px;
+}
+
+p.label-md.card-author > a {
+  font-size: var(--font-size-p-3);
+  font-weight: var(--fw-600);
+  margin: 0px;
+}
+
+.collection-card .card-author {
+  display: flex;
+  gap: 2px;
+  font-style: italic;
+  margin: 0px;
+}
+
+p.card-text {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 500;
+}
+
+.collection-card .card-content { 
+  padding: 16px; 
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-card .card-profile {
+  position: relative;
+  width: 64px;
+  margin-block-start: -50px;
+}
+
+.collection-card .card-profile img {
+  border-radius: 8px;
+}
+
+.collection-card .card-profile ion-icon {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  color: hsl(30.98deg 100% 50%);
+  font-size: 2.3rem;
+  width: 16px;
+  height: 16px;
+  background: rgb(237 237 237);
+  padding: 4px;
+  border-radius: 50px;
+}
+
+.collection-card .card-title { 
+  margin-block-start: 12px; 
+}
+
+.collection-card .card-author {
+  display: flex;
+  gap: 2px;
+  font-style: italic;
+}
+
+.collection-card .card-author .link {
+  font-style: normal;
+  color:rgb(144, 6, 161);
+}
+
+.collection-card .card-text { 
+  margin-block-start: 4px; 
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--orange-color);
+  font-size: 1.7rem;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 13px hsla(0, 0%, 35%, 0.425);
+  transition: 0.25s ease;
+  color: var(--white-color);
+  border: 0px;
+  outline: 0px;
+  font-size: 20px;
+}
+
+.slider-btn:is(:hover, :focus-visible) { 
+  background-color: rgb(144, 6, 161);
+}
+
+.slider-btn:disabled { 
+  display: none; 
+}
+
+.slider-btn.prev { 
+  left: 10px; 
+}
+
+.slider-btn.next { 
+  right: 10px; 
+}
+
+.top-collection .container > .btn-link {
+  margin-inline: auto;
+  margin-block-start: 32px;
+}
+
+.see-text > a > span.span {
+  color: var(--white-color);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  top: 25px;
+}
+
+.see-text > a > ion-icon.arrow-icon {
+  color: var(--white-color);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  top: 28px;
+}
+/*-----------------------------------
+  TOP Games End
+-----------------------------------*/
+
+
+
+
+/* ------------------------------- 
+  List Description Start
+----------------------------------- */
+.list-description{
+  padding: 60px 0px 60px 0px;
+  background: antiquewhite;
+}
+
+.list-content-home > h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #0e0e0e;
+  word-spacing: 1px;
+  font-family: "Hind", sans-serif !important;
+  line-height: 40px;
+  margin-top: 25px;
+}
+
+.list-content-home > ul {
+  padding: 20px 0px 0px 0px;
+}
+
+.list-content-home > ul > li {
+  list-style: circle;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  padding-bottom: 10px;
+  padding-top: 3px;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.list-content-home > p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  padding-bottom: 10px;
+  padding-top: 3px;
+}
+/* ----------------------------------
+  List Description End
+----------------------------------------- */
+
+
+
+
+/* -------------------------------
+  Footer Start
+----------------------------------- */
+.footer {
+    border-width: 1px;
+    background: #23212173;
+    padding: 30px 15px 20px 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+
+.footer-license-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-license-images img {
+  padding: 5px 8px 0px 8px;
+}
+
+footer img.footer-ico{
+  max-width:130px
+}
+
+img.footer-ico.footer-icon-sm-1 {
+  width: 125px;
+}
+
+img.footer-ico.footer-icon-sm-2 {
+  width: 140px;
+}
+
+img.footer-ico.footer-icon-xsm {
+  width: 50px;
+}
+
+img.footer-ico.footer-icon-sm {
+  width: 98px;
+}
+
+img.footer-ico.footer-icon-sm-3 {
+  width: 62px;
+}
+
+p.footer-p-a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ebebeb;
+  line-height: 27px;
+}
+
+p.footer-p-note {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ebebeb;
+  line-height: 27px;
+}
+
+p.footer-p-a > a{
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+p.footer-p-a > a:hover {
+  color: #ff0a2b !important;
+  text-decoration: underline;
+}
+
+p.footer-copyright {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  letter-spacing: 0.2px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+p.footer-copyright > a{
+  color: #ffffff !important;
+}
+
+p.footer-copyright > a:hover{
+  color: #ff0a2b !important;
+}
+
+.footer-links > ul > li {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0px 2px;
+}
+
+.footer-links > ul > li > a{
+  font-family: var(--font-1-inter);
+  color: #fff;
+  font-size: 14px;
+  text-decoration: underline !important;
+}
+
+.footer-links li a:after {
+  display: inline-block;
+  padding: 0px 0 0px 0.5em;
+  color: #fff;
+  content: "|";
+}
+
+.footer-links li:last-child a:after {
+  color: transparent;
+}
+
+/* -------------------------------
+  Footer End
+---------------------------------- */
+
+
+
+/* -------------------------------
+  Sub Pages Start
+---------------------------------- */
+.header-bg.header-bg-subpage {
+  clip-path: none;
+  height: auto;
+  padding: 15px 0px;
+  margin-bottom: 80px;
+  border-bottom-right-radius: 0px !important;
+}
+
+.logo-area.logo-area-subapge > a > img {
+  width: 260px;
+}
+
+.subpage-section{
+  padding: 20px 0px 30px 0px;
+}
+
+h2.js-block-title {
+  font-size: var(--font-size-p-6);
+  font-weight: var(--fw-700);
+  color: #fff !important;
+  letter-spacing: -0.1px;
+  word-spacing: 1.2px;
+  margin-bottom: 18px;
+  line-height: 32px;
+}
+
+.list-content > h4 {
+  font-size: var(--font-size-p-6);
+  font-weight: var(--fw-700);
+  letter-spacing: -0.1px;
+  word-spacing: 1.2px;
+  margin-bottom: 18px;
+  line-height: 32px;
+  color: #fff !important;
+}
+
+.list-content > p {
+  font-size: var(--font-size-p-2);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.1px;
+  word-spacing: 1px;
+  margin-bottom: 18px;
+  line-height: 24px;
+  color: #ebebeb;
+}
+
+.list-content > h4 {
+  font-size: var(--font-size-p-6);
+  font-weight: var(--fw-700);
+  letter-spacing: -0.1px;
+  word-spacing: 1.2px;
+  margin-bottom: 18px;
+  line-height: 32px;
+  color: #ebebeb;
+  font-family: var(--font-1-inter) !important;
+}
+
+.list-content > h6 {
+  font-size: 18px;
+  font-weight: var(--fw-700);
+  letter-spacing: -0.1px;
+  word-spacing: 1.2px;
+  margin-bottom: 18px;
+  line-height: 32px;
+  color: #ebebeb;
+  font-family: var(--font-1-inter) !important;
+}
+
+.list-content > ul > li {
+  font-size: var(--font-size-p-2);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.1px;
+  word-spacing: 1px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  color: #ebebeb;
+  display: block;
+}
+
+.list-content > ol > li{
+  font-size: var(--font-size-p-2);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.1px;
+  word-spacing: 1px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  color: #ebebeb;
+  display: block;
+}
+
+.list-content > p > a {
+  text-decoration: underline !important;
+  color: #0f37e7;
+  text-wrap: wrap;
+  word-break: break-all;
+}
+
+.subpage-heading > h1{
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--fw-700);
+  color: #fff !important;
+  line-height: 62px;
+  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+/* -------------------------------
+  Sub Pages End
+---------------------------------- */
+
+
+
+/* ----------------------------------
+  Welcome Bonus Start
+--------------------------------- */
+.header-bg.header-bonus-page {
+  margin: 0px;
+}
+
+.header-context.header-bonus > h1 {
+  color: var(--white-color);
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--fw-700);
+  letter-spacing: 0.2px;
+  padding-bottom: 15px;
+  line-height: 70px;
+  text-transform: capitalize;
+}
+
+.game-text-white{
+  padding: 100px 0px 0px 0px;
+}
+
+.game-promotion-text > p{
+  font-size: var(--font-size-p-2);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.1px;
+  word-spacing: 1px;
+  margin-bottom: 0px;
+  line-height: 24px;
+  color: #3b3a3a;
+}
+
+.game-promotion-text > ul > li{
+  font-size: var(--font-size-p-2);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.1px;
+  word-spacing: 1px;
+  margin-bottom: 0px;
+  line-height: 24px;
+  color: #3b3a3a;
+}
+
+.game--text P {
+  font-size: var(--font-size-p-6);
+  font-weight: var(--fw-700);
+  letter-spacing: -0.1px;
+  word-spacing: 1.2px;
+  margin-bottom: 18px;
+  line-height: 32px;
+  color: rgb(0, 0, 0);
+  font-family: var(--font-1-inter) !important;
+}
+
+.list-content {
+  background: #00000061;
+  padding: 40px;
+}
+/* ----------------------------------
+  Welcome Bonus Start
+--------------------------------- */
+
+
+.three_offers_wrap {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.three_offer_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  max-width: 372px;
+  width: 100%;
+  min-height: 107px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.Ribbon__StyledLoogRibbon-sc-1tqoeow-0.fqInKP.Card_ribbon__zwMbj.primary-ribbon-1 {
+  left: -25px;
+  top: -15px;
+  max-height: 7px !important;
+  width: 128px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.three_offer_item.primary .three_offer_item-container {
+  position: relative;
+  top: -5px;
+}
+
+.Card_cardRow__1j4qH .Card_cardButton__UvsHg .Card_ctaTooltip__M78x2 span > img{
+  position: relative;
+  top: -2px;
+}
+
+.fqInKP.primary-ribbon-1{
+  min-height: 23px;
+}
+
+.fqInKP.primary-ribbon-1::after, .fqInKP.primary-ribbon-1::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0px;
+  top: 0px;
+  right: -10px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 23px solid transparent;
+  border-left: 21px solid #0a97db;
+}
+
+a.bonus-1:hover {
+  color: #800020 !important;
+}
+
+.three_offer_get_bonus:hover {
+  color: #35c500;
+}
+
+.three_offer_welcome_bonus a:hover {
+  color: #181818;
+}
+
+.fqInKP::after, .fqInKP::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0px;
+  top: 0px;
+  right: -10px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 20px solid #0a97db;
+}
+
+.three_offer_item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 338px;
+  min-height: 78px;
+}
+
+.three_offer_item__top-block, .three_offer_item__bottom-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.three_offer_item__top-block, .three_offer_item__bottom-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.three_offer_welcome_bonus {
+  width: 100%;
+  max-width: 211px;
+}
+
+.three_offer_rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 30px;
+  border-radius: 1000px;
+  background: #ffb83f;
+  font-weight: 700;
+  font-size: 18px;
+  color: #121212;
+  font-family: var(--font-1-inter);
+}
+
+.three_offer_welcome_bonus a {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #232936;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.three_offer_verdict {
+  color: #1C1F33;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.three_offer_item.primary {
+  min-height: 84px;
+  padding: 20px 15px 5px;
+}
+
+.three_offer_rates {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.three_offer_logo {
+  height: 36px;
+  width: 36px;
+  border-radius: inherit;
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.three_offer_logo__holder {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+}
+
+.three_offer_logo_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.three_offer_name {
+  color: #1C1F33;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.three_offer_get_bonus {
+  text-transform: capitalize;
+  color: #35c500;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+a.bonus-1 {
+  font-family: var(--font-1-inter);
+  color: #800020;
+  font-size: 15px;
+}
+
+.bonus-offer-extra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.star-rate {
+  padding: 0px;
+  display: flex;
+  color: #ffcd00;
+  padding: 0px;
+  list-style: none;
+  margin-bottom: 0px !important;
+}
+
+.bonus-offer-extra > ul > li{
+  padding: 0px 2px;
+  font-size: 14px;
+}
